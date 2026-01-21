@@ -11,7 +11,7 @@ Dongdong Chen (d.chen@hw.ac.uk)
 📎 **arXiv**:
 https://arxiv.org/abs/2601.13986 
 
-![pipeline](images/Figure_3.pdf)
+![pipeline](./images/Figure_3.pdf)
 ## Abstract
 
 Image Dehazing (ID) aims to produce a clear image from an observation contaminated by haze. Current ID methods typically rely on carefully crafted priors or extensive haze-free ground truth, both of which are expensive or impractical to acquire, particularly in the context of scientific imaging. We propose a new unsupervised learning framework called Equivariant Image Dehazing (EID) that exploits the symmetry of image signals to restore clarity to hazy observations. By enforcing haze consistency and systematic equivariance, EID can recover clear patterns directly from raw, hazy images. Additionally, we propose an adversarial learning strategy to model unknown haze physics and facilitate EID learning. Experiments on two scientific image dehazing benchmarks (including cell microscopy and medical endoscopy) and on natural image dehazing have demonstrated that EID significantly outperforms state-of-the-art approaches. By unifying equivariant learning with modelling haze physics, we hope that EID will enable more versatile and effective haze removal in scientific imaging.
@@ -63,7 +63,7 @@ python demo_dehaze.py
 ## Results
 
 Some of the comparing results are as follows.
-![results1](images/Figure_7.pdf)
+![results1](./images/Figure_7.pdf)
 
 
 ## Citation
