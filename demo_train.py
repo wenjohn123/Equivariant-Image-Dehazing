@@ -4,8 +4,6 @@ from torch.utils.data import DataLoader
 import argparse
 
 from ei.ei import EI
-from physics.ct import CT
-from physics.inpainting import Inpainting
 from transforms.rotate import Rotate
 from transforms.shift import Shift
 from deepinv.transform import shift, rotate, scale
@@ -15,13 +13,6 @@ from torchvision import transforms
 from torchvision.transforms import InterpolationMode
 from deepinv.physics.
 
-from deepinv.transform import scale
-from deepinv.transform import reflect
-from deepinv.transform.projective import Homography
-from deepinv.transform.projective import Euclidean
-from deepinv.transform.projective import Similarity
-from deepinv.transform.projective import Affine
-from deepinv.transform.projective import PanTiltRotate
 
 import numpy as np
 
@@ -91,14 +82,6 @@ def main():
         input_shape=[args.channel, args.img_height, args.img_width]
         transform_ei = rotate.Rotate(n_trans=1)
 
-        #transform_ei = shift.Shift(n_trans=3)
-        #transform_ei = scale.Scale(n_trans=1, factors=[1.12])
-        #transform_ei = reflect.Reflect(n_trans=1)
-        #transform_ei = Homography(n_trans=1)
-        #transform_ei = Similarity(n_trans = 1)
-        #transform_ei = Affine(n_trans = 1)
-        #transform_ei = PanTiltRotate(n_trans = 1)
-        #transform_ei = Euclidean(n_trans = 1)
 
         dataloader = get_dataloader(dir_path=args.data_dir_path,batch_size=1,shuffle=True,num_workers=2,transform=transform)
         physics = Haze(input_shape=input_shape, blocks=args.blocks, dataset_name=args.trained_dataset, epoch=args.load_epoch)
