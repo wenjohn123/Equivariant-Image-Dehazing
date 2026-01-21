@@ -47,7 +47,7 @@ pip install numpy==1.26.0
 ```
 ## Dataset Preparation
 We provide the original datasets sources and our cleaned datasets will be released soon.
-You can download the Cholec80 dataset from [Cholec80 Dataset](https://camma.unistra.fr/datasets/), the Cell97 dataset from [Hand-segmented 2D Nuclear Images](https://murphylab.web.cmu.edu/data/2009_ISBI_Nuclei.html), and the RESIDE series dataset from [RESIDE](https://sites.google.com/view/reside-dehaze-datasets/reside-β).
+You can download the Cholec80 dataset from [Cholec80 Dataset](https://camma.unistra.fr/datasets/), the Cell97 dataset from [Hand-segmented 2D Nuclear Images](https://murphylab.web.cmu.edu/data/2009_ISBI_Nuclei.html), and the RESIDE series datasets from [RESIDE](https://sites.google.com/view/reside-dehaze-datasets/reside-β).
 
 After downloading, place the data under ```./data```
 
